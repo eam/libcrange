@@ -4,7 +4,6 @@ set -e
 set -x
 [ -n "$DESTDIR" ] || export DESTDIR=$HOME/prefix
 
-rm -rf $DESTDIR
 make clean || true # ignore failures
 
 aclocal
